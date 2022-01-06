@@ -7,6 +7,7 @@ import { FormComponent } from './form/form.component';
 import { UpvoteComponent } from './upvote/upvote.component';
 import { DownvoteComponent } from './downvote/downvote.component';
 import { DeleteComponent } from './delete/delete.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DeleteComponent } from './delete/delete.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

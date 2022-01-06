@@ -1,16 +1,21 @@
 <div class="container">
     <form action="">
-        <div class=""><br>
+        <div class="form-group"><br>
             <label for="">Your Name</label>
-            <input type="text" class="form-control" name="" id="" placeholder="Your Name"> 
-        </div><br>
+            <input type="text" class="form-control" name="name"  [(ngModel)]="quote.name" placeholder="Your Name"> 
+        </div><br> 
+        <!--two way data binding-->
         <div class="form-group">
             <label for="">Author </label>
-            <input type="text" class="form-control" name="" id="" placeholder="Author"> 
+            <input type="text" class="form-control" name="author" [(ngModel)]="quote.author"  placeholder="Author"> 
         </div><br>
         <div class="form-group">
             <label for="">Write Your Quote</label><br>
-            <textarea placeholder="Write Your Quote" name="" id="" cols="53" rows="10"></textarea>
+            <textarea [(ngModel)]="quote.quote" placeholder="Write Your Quote" name="quote"  cols="53" rows="10"></textarea>
+        </div><br>
+        <div class="form-group">
+            <label for="">Time Posted </label>
+            <input type="text" class="form-control" name="timePosted" [(ngModel)]="quote.timePosted" placeholder="Time Posted"> 
         </div><br>
         <div class="form-group">
             <button class="btn btn-primary">Submit Quote</button>
