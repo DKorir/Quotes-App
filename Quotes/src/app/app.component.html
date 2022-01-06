@@ -1,4 +1,4 @@
-<app-form></app-form>
+<app-form (formInputDetails)="endFunction($event)"></app-form>
 <div class="container-fluid">
   <div class="details" *ngFor="let quote of quotes">
   <p>My Name: {{quote.name}}</p>

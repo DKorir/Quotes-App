@@ -12,4 +12,9 @@ export class AppComponent {
   quotes:Quote[]=[
     new Quote("Domie","Kiprono", "If love is not us then we have no God!", new Date())
   ]
+
+  endFunction(x:any){
+  x.timePosted=new Date(x.timePosted)
+  this.quotes.push(x)
+  }
 }
