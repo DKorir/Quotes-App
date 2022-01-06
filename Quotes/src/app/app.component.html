@@ -1,6 +1,6 @@
 <app-form (formInputDetails)="endFunction($event)"></app-form>
 <div class="container-fluid">
-  <div class="details" *ngFor="let quote of quotes">
+  <div class="details" *ngFor="let quote of quotes; let i=index">
   <p>My Name: {{quote.name}}</p>
   <p>Author: {{quote.author}}</p>
   <p>Quotes Details: {{quote.quote}}</p>
@@ -15,7 +15,7 @@
         <app-downvote></app-downvote>
       </div>
       <div class="col-md-4">
-          <app-delete></app-delete>
+          <app-delete (deletes)="myDeletes($event,i)" ></app-delete>
       </div>
     </div>
   </div>

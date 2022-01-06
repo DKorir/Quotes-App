@@ -17,4 +17,12 @@ export class AppComponent {
   x.timePosted=new Date(x.timePosted)
   this.quotes.push(x)
   }
+  myDeletes(deletes:boolean,index:number){
+    if (deletes){
+      let toDelete = confirm("Are you sure you want to delete ${this.quotes[index].name}?")
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
 }
