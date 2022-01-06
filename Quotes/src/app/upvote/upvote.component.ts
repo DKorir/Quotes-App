@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpvoteComponent implements OnInit {
   upvoteCount:number=0
-  downvoteCount:number=0
+  
   constructor() { }
 
   ngOnInit(): void {
