@@ -15,4 +15,8 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  formFunction(){
+   this.formInputDetails.emit(this.quote) 
+  }
+
 }
