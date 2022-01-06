@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upvote.component.css']
 })
 export class UpvoteComponent implements OnInit {
-
+  upvoteCount:number=0
+  downvoteCount:number=0
   constructor() { }
 
   ngOnInit(): void {
+  }
+  countUpvote(){
+this.upvoteCount++
   }
 
 }
