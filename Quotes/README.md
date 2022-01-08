@@ -7,6 +7,8 @@ Quotes Appa allows users to to view quotes in the web upvote or downvote  quotes
 You need to have git,angular CLI installed
 You can install it with the following command in your terminal
 `$ sudo apt install git-all`
+`$ npm install -g @angular/cli`
+
 
 ### Setup
 To access this project on your local files, you can clone it using these steps
