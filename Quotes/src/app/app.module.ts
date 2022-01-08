@@ -8,6 +8,10 @@ import { UpvoteComponent } from './upvote/upvote.component';
 import { DownvoteComponent } from './downvote/downvote.component';
 import { DeleteComponent } from './delete/delete.component';
 import { FormsModule } from '@angular/forms';
+import { PostedDurationPipe } from './posted-duration.pipe';
+import { QuoteHighlightDirective } from './quote-highlight.directive';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { MainQuoteComponent } from './main-quote/main-quote.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { FormsModule } from '@angular/forms';
     UpvoteComponent,
     DownvoteComponent,
     DeleteComponent,
+    PostedDurationPipe,
+    QuoteHighlightDirective,
+    QuoteDetailsComponent,
+    MainQuoteComponent,
   ],
   imports: [
     BrowserModule,

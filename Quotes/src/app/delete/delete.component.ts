@@ -11,7 +11,7 @@ export class DeleteComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  deleteQuotes(confirmed:boolean){
+  deleteData(confirmed:boolean){
 this.deletes.emit(confirmed)
   }
 
